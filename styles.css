@@ -1,0 +1,290 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --my-orange: #f7cd75;
+    --mythickgrey: #727272;
+    --grey: #f2f2f2;
+    --myblue: #8793c6;
+    --mygreen: #8ace5e;
+}
+
+body{
+    background: var(--my-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: white;
+    border-radius: 3px;
+    column-gap: 2.45rem;
+    height: 30rem;
+    width: 50rem;
+}
+
+.leftside {
+    /* margin: 0; */
+    margin-left: -3rem;
+    background: var(--grey);
+    border-radius: 1px 0px 0px 1px;
+    max-height: 40rem;
+    max-width: 20rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    /* height: 50rem; */
+}
+
+.rightside {
+    margin-left: -2.5rem;
+    background: white;
+    border-radius: 0px 1px 1px 0px;
+    height: 30rem;
+    width: 35rem;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+div, h1 {
+    font-weight: lighter;
+    font-size: 2rem;
+    margin-left: 2rem;
+    /* margin-right: 0; */
+}
+
+.left-header {
+    display: flex;
+    justify-content: center;
+    column-gap: 7rem;
+    margin-left: 0;
+    /* padding-left: 0; */
+    /* margin-left: 1rem; */
+}
+
+.hidden {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    /* height: 30rem; */
+    width: 20rem;
+    flex-direction: column;
+}
+
+.hidden .visa{
+    margin-top: 1rem;
+    border-radius: 2.5%;
+    border: 1px solid black;
+    background: white;
+    height: 8rem;
+    width: 15rem;
+}
+
+.hidden .visa:hover{
+    box-shadow: 0px 1px 0px 3px #00ff32;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.hidden .visa img{
+    height: 2rem;
+    background-size: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    
+}
+ img{
+    margin-top: 1.6rem;
+}
+
+.visa p{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+.visa .span{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 15px;
+}
+
+.mastercard {
+    margin-top: 1rem;
+    border: 1px solid black;
+    box-shadow: 0px 1px 0px 3px #00ff32;
+    cursor: pointer;
+    background: white;
+    border-radius: 2.5%;
+    height: 8rem;
+    width: 15rem;
+}
+ .mastercard img{
+    height: 2rem;
+    background-size: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;   
+}
+
+.mastercard p{
+    margin-top: 2;
+    margin-left: 1rem;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+.mastercard .span{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 15px;
+}
+
+.maestro {
+    margin-top: 1rem;
+    border: 1px solid black;
+    background: white;
+    border-radius: 2.5%;
+    height: 8rem;
+    width: 15rem;
+    margin-bottom: 3rem;
+}
+
+.maestro:hover {
+    box-shadow: 0px 1px 0px 3px #00ff32;
+    cursor: pointer;
+}
+
+ .maestro img{
+    height: 2rem;
+    background-size: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;   
+}
+
+.maestro p{
+    margin-top: 2;
+    margin-left: 1rem;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+.maestro .span {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 15px;
+}
+
+.right-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10rem;
+    margin-left: 4rem;
+    margin-right: 1rem;
+    height: 7rem;
+    width: 25rem;
+    margin-top: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.857);
+}
+
+.right-header h1 {
+    font-size: 21px;
+    margin-top: -1rem;
+    /* width: 10rem; */
+}
+
+
+.header {
+    display: flex;
+    column-gap: 0.5rem;
+    margin-left: 0;
+    text-transform: capitalize;
+    font-size: 24px;
+    margin-top: 2rem;
+}
+
+.plus{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.t-r {
+    display: flex;
+    column-gap: 0.5rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    text-transform: capitalize;
+}
+
+.span{
+    font-weight: bold;
+    display: flex;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    margin-left: ;
+}
+
+.span span{
+    font-size: 15px;
+}
+
+.phone img{
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 20px;
+}
+
+.phone{
+    display: flex;
+    justify-content: center;
+}
+
+.phone h1,p{
+    font-size: 20px;
+}
+
+.phone img,.text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    column-gap: 9rem;
+}
+
+.phone {
+    margin-left: -2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.text h1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 0rem;
+}
+
+.text span{
+    font-size: 15px;
+    margin-top: -0.5rem;
+}
+
+.price h1{
+    font-weight: bold;
+}
+
+.price h1 span{
+    font-size: 15px;
+    margin-bottom: 3rem;
+}
+
